@@ -22,7 +22,7 @@ function displayGreeting() {
 
 // JavaScript function to redirect to the final resume (PDF)
 function showFinalResume() {
-    window.open('resume.pdf', '_blank');
+    window.open('Resources/resume.pdf', '_blank');
 }
 
 // JavaScript function to redirect to the comment page (External Link)
