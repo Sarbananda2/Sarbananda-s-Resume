@@ -19,6 +19,11 @@ header {
     width: 100%;
     border-bottom-left-radius: 20px; /* Rounded left bottom corner */
     border-bottom-right-radius: 20px; /* Rounded right bottom corner */
+    margin-bottom: -20px; /* Overlap the container */
+    height: 80px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
 }
 
 /* Style the footer */
