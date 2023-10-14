@@ -1,6 +1,6 @@
 /* Apply styles to the body of the page */
 body {
-    font-family: "Quaire Sans", Arial, sans-serif;
+    font-family: 'Merienda', "Quaire Sans", Arial, sans-serif;
     background-color: #f3f3f3;
     text-align: center;
     margin: 0;
@@ -122,4 +122,10 @@ button:hover {
     font-size: 24px;
     margin-bottom: 10px; /* Add margin at the bottom to create a gap */
     font-weight: lighter;
+}
+
+/* Define the 'Merienda' font family */
+@font-face {
+    font-family: 'Merienda';
+    src: url('Resources/Merienda-VariableFont_wght.ttf') format('truetype');
 }
