@@ -54,7 +54,7 @@ header h1 {
 
 /* Style the greeting container without a background color */
 .greeting-container {
-    text-align: center;
+    text-align: left;
     padding: 10px;
 }
 
@@ -92,34 +92,4 @@ button {
 
 button:hover {
     background-color: #258cd1;
-}
-
-/* Responsive layout for child section containers */
-.sections-container {
-    display: flex;
-    flex-direction: row; /* Display horizontally by default */
-
-    /* Media query for small screens */
-    @media (max-width: 768px) {
-        flex-direction: column; /* Display vertically for small screens */
-    }
-}
-
-/* Style for the Owner and World sections */
-.owner-section,
-.world-section {
-    margin: 10px;
-    padding: 10px;
-    border: none; /* Remove the border or outline */
-    border-radius: 10px;
-    width: 100%; /* Take full width */
-}
-
-/* Style for the labels */
-.owner-section h2,
-.world-section h2 {
-    margin: 0;
-    font-size: 24px;
-    margin-bottom: 10px; /* Add margin at the bottom to create a gap */
-    font-weight: lighter;
 }

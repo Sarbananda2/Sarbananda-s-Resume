@@ -20,9 +20,15 @@ function displayGreeting() {
     partBElement.textContent = partB;
 }
 
+// JavaScript function to open a new tab and navigate to the ResumeLab login page
+function workOnResume() {
+    // Open a new tab with the specified URL
+    window.open('https://app.resumelab.com/login', '_blank');
+}
+
 // JavaScript function to redirect to the final resume (PDF)
-function showFinalResume() {
-    window.open('Resources/resume.pdf', '_blank');
+function showResume() {
+    window.open('sarbananda-taw-resume.html', '_blank');
 }
 
 // JavaScript function to redirect to the comment page (External Link)
