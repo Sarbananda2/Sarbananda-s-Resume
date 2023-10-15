@@ -17,13 +17,13 @@ header {
     text-align: center;
     padding: 10px;
     width: 100%;
-    border-bottom-left-radius: 20px; /* Rounded left bottom corner */
-    border-bottom-right-radius: 20px; /* Rounded right bottom corner */
-    margin-bottom: -20px; /* Overlap the container */
-    height: 80px; /* Adjust the height as needed */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: -20px;
+    height: 80px;
     display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+    justify-content: center;
 }
 
 /* Style the footer */
@@ -33,8 +33,8 @@ footer {
     text-align: center;
     padding: 10px;
     width: 100%;
-    border-top-left-radius: 20px; /* Rounded left top corner */
-    border-top-right-radius: 20px; /* Rounded right top corner */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 /* Style the h1 within the header */
@@ -49,7 +49,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1; /* Fill available vertical space between header and footer */
+    flex: 1;
 }
 
 /* Style the greeting container without a background color */
@@ -68,15 +68,7 @@ header h1 {
     font-size: 29px;
 }
 
-/* Style the button container to stack buttons */
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-
-/* Style the buttons with fixed dimensions */
+/* Style for the buttons with fixed dimensions */
 button {
     background-color: #3498db;
     color: #f3f3f3;
@@ -88,6 +80,7 @@ button {
     border-radius: 20px;
     font-size: 16px;
     transition: background-color 0.2s;
+    text-align: center;
 }
 
 button:hover {
@@ -97,11 +90,10 @@ button:hover {
 /* Responsive layout for child section containers */
 .sections-container {
     display: flex;
-    flex-direction: row; /* Display horizontally by default */
+    flex-direction: row;
 
-    /* Media query for small screens */
     @media (max-width: 768px) {
-        flex-direction: column; /* Display vertically for small screens */
+        flex-direction: column;
     }
 }
 
@@ -110,9 +102,9 @@ button:hover {
 .world-section {
     margin: 10px;
     padding: 10px;
-    border: none; /* Remove the border or outline */
+    border: none;
     border-radius: 10px;
-    width: 100%; /* Take full width */
+    width: 100%;
 }
 
 /* Style for the labels */
@@ -120,7 +112,7 @@ button:hover {
 .world-section h2 {
     margin: 0;
     font-size: 24px;
-    margin-bottom: 10px; /* Add margin at the bottom to create a gap */
+    margin-bottom: 10px;
     font-weight: lighter;
 }
 

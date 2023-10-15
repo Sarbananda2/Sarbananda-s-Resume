@@ -22,18 +22,33 @@ function displayGreeting() {
 
 // JavaScript function to open a new tab and navigate to the ResumeLab login page
 function workOnResume() {
-    // Open a new tab with the specified URL
     window.open('https://app.resumelab.com/login', '_blank');
 }
 
-// JavaScript function to redirect to the final resume (PDF)
-function showResume() {
-    window.open('Resources/sarbananda-taw-desktop-support-technician-resume.pdf', '_blank');
-}
+// Function to show action buttons (Show Resume, Comment on Resume, and Back) based on the selected company
+function selectCompany(company) {
+    // Hide the company selection buttons
+    document.getElementById('companyButtons').style.display = 'none';
 
-// JavaScript function to redirect to the comment page (External Link)
-function commentOnResume() {
-    window.open('https://app.resumelab.com/feedback/session/c1d6d21c-f2c5-4afd-b2b3-7d5638f4b120', '_blank');
+    // Show the action buttons
+    document.getElementById('actionButtons').style.display = 'block';
+
+    // Set the appropriate actions for the selected company
+    if (company === 'wipro') {
+        document.getElementById('showResumeButton').onclick = function () {
+            window.open('Resources/sarbananda-taw-desktop-support-technician-resume.pdf', '_blank');
+        };
+        document.getElementById('commentOnResumeButton').onclick = function () {
+            window.open('https://app.resumelab.com/feedback/session/b9096418-302d-4939-a913-f5e124cd3673', '_blank');
+        };
+    } else if (company === 'helpshift') {
+        document.getElementById('showResumeButton').onclick = function () {
+            window.open('https://www.helpshift.com/resume', '_blank');
+        };
+        document.getElementById('commentOnResumeButton').onclick = function () {
+            window.open('https://app.resumelab.com/feedback/session/3bebe174-e4e0-4e46-a514-a46494bccce3', '_blank');
+        };
+    }
 }
 
 // Call the function to display a personalized greeting with two parts
