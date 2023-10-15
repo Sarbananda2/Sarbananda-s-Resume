@@ -28,7 +28,7 @@ function workOnResume() {
 
 // JavaScript function to redirect to the final resume (PDF)
 function showResume() {
-    window.open('sarbananda-taw-resume.html', '_blank');
+    window.open('Resources/sarbananda-taw-desktop-support-technician-resume.pdf', '_blank');
 }
 
 // JavaScript function to redirect to the comment page (External Link)
