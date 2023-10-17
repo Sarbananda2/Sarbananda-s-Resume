@@ -43,7 +43,7 @@ function selectCompany(company) {
         };
     } else if (company === 'helpshift') {
         document.getElementById('showResumeButton').onclick = function () {
-            window.open('https://www.helpshift.com/resume', '_blank');
+            window.open('Resources/sarbananda-taw-player-support-agent-resume.pdf', '_blank');
         };
         document.getElementById('commentOnResumeButton').onclick = function () {
             window.open('https://app.resumelab.com/feedback/session/3bebe174-e4e0-4e46-a514-a46494bccce3', '_blank');
